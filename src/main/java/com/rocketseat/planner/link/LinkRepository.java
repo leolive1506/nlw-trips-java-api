@@ -7,5 +7,5 @@ import java.util.List;
 import java.util.UUID;
 
 public interface LinkRepository extends JpaRepository<Link, UUID> {
-    List<Activity> findByTripId(UUID tripId);
+    List<Link> findByTripId(UUID tripId);
 }

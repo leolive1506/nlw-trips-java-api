@@ -21,7 +21,7 @@ public class LinkService {
         return new LinkResponse(newLink.getId());
     }
 
-    public List<ActivityData> getAllLink(UUID tripId) {
-        return this.repository.findByTripId(tripId).stream().map(ActivityData::new).toList();
+    public List<LinkData> getAllLinks(UUID tripId) {
+        return this.repository.findByTripId(tripId).stream().map(LinkData::new).toList();
     }
 }
